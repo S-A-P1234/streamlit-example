@@ -27,7 +27,7 @@ with st.echo(code_location='below'):
     maxn = max(l)
     
     st.write('Max Number is: ', maxn)
-    
+    """
     total_points = st.slider("First Number", 1, 5000, 2000)
     num_turns = st.slider("Second Number", 1, 100, 9)
     num_turns = st.slider("Third Number", 1, 5000, 1000)
@@ -47,3 +47,4 @@ with st.echo(code_location='below'):
     st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
         .mark_circle(color='#0068c9', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
+        """
