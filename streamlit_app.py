@@ -17,7 +17,17 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 
 with st.echo(code_location='below'):
-    title = st.text_input('Movie title', 'Life of Brian')
+    n1 = st.text_input('First Number', '1')
+    n2 = st.text_input('First Number', '2')
+    n3 = st.text_input('First Number','3')
+    num1 = int(n1)
+    num2 = int(n2)
+    num3 = int(n3)
+    l = [num1,num2,num3]
+    maxn = max(l)
+    
+    st.write('Max Number is: ', maxn)
+    
     total_points = st.slider("First Number", 1, 5000, 2000)
     num_turns = st.slider("Second Number", 1, 100, 9)
     num_turns = st.slider("Third Number", 1, 5000, 1000)
